@@ -16,7 +16,7 @@ export default createClass({
 		return (
 			<div>
 				{_.times(25, n => (
-					<Tag kind={'warning'} key={n}>{words[n % words.length]}</Tag>
+					<Tag kind={'danger'} key={n}>{words[n % words.length]}</Tag>
 				))}
 
 				<Tag isTop>
@@ -29,7 +29,7 @@ export default createClass({
 				<Tag isTop>
 					Grouped items
 					{_.times(25, n => (
-						<Tag kind={'warning'} key={n}>{words[n % words.length]}</Tag>
+						<Tag kind={'info'} key={n}>{words[n % words.length]}</Tag>
 					))}
 				</Tag>
 			</div>
