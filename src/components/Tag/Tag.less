@@ -43,6 +43,26 @@
 		margin-left: 6px;
 	}
 
+	.border-color {
+		// Types
+		&-success {
+			border-color: @featured-color-success;
+		}
+	
+		&-info {
+			border-color: @featured-color-info;
+		}
+	
+		&-warning {
+			border-color: @featured-color-warning;
+		}
+	
+		&-danger {
+			border-color: @featured-color-danger;
+		}
+
+	}
+
 	// ---------------
 	// middle children
 	// ---------------
@@ -93,6 +113,8 @@
 		& > .@{prefix}-Tag-other-children {
 			padding: 0 @size-S;
 		}
+
+		.border-color;
 	}
 
 	// --------------
@@ -116,5 +138,7 @@
 				margin: 1px 9px 0 7px;
 			}
 		}
+
+		.border-color;
 	}
 }
